@@ -1,12 +1,20 @@
-import { Grid, Container, Heading, Text } from "@chakra-ui/react"
-
+import {Container, Box, Heading, Text, SimpleGrid, Image, Center } from "@chakra-ui/react"
+import React from 'react'
+import dbImage from '../images/dbimg.jpg'
 export default function Home() {
     return(
-    <Grid>
-        <Container>
-            <Heading>David Briken</Heading>
-            <Text>David Briken is a Information Systems graduate from UMBC, who is passionate about developing technology that will make an impact</Text>
+        
+        <Container  centerContent>
+            <SimpleGrid columns={2}>
+            <Box>
+                <Heading textAlign='center'>David Briken</Heading>
+                <Text textAlign='left'> lorem-ipsum.paragraph </Text>
+            </Box>
+            <Box>
+                <Image borderRadius='md' src={dbImage} alt="img"/>
+            </Box>
+            </SimpleGrid>
         </Container>
-    </Grid>
+        
     )
 }
