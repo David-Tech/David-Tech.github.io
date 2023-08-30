@@ -38,6 +38,7 @@ export default function Home() {
                     </List>
                     <List spacing={3}>       
                             <ListIcon as={IconMessage}/> dbriken.tech@gmail.com
+                            changes
                     </List>
                 </Box>
             </VStack>
