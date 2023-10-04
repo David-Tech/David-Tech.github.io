@@ -1,4 +1,4 @@
-import {Container, Heading, Text, SimpleGrid, Image, Center, HStack, VStack, List, ListItem, ListIcon, Link as ChakraLink} from "@chakra-ui/react"
+import {Container, Heading, Text, SimpleGrid, Button, Image, Center, HStack, VStack, List, ListItem, ListIcon, Link as ChakraLink, UnorderedList} from "@chakra-ui/react"
 import React from 'react'
 import { IconBrandLinkedin, IconBrandTwitter, IconInbox} from "@tabler/icons-react";
 import dbImage from '../images/headshot.jpg'
@@ -8,19 +8,23 @@ export default function Home() {
         
         <Container width='-moz-max-content' centerContent>
            <VStack spacing='30px'>
-                <Container  width='-moz-max-content'>
+                <Container  width='-moz-max-content' paddingTop='50px'>
                     <HStack spacing='50px' alignItems='center'>
                         <Heading textAlign='center' fontSize='4xl'>David Briken</Heading>
-                        <Image borderRadius='full' maxHeight='100px' maxWidth='100px' src={dbImage} alt="img"/>
+                        <Image borderRadius='full' maxHeight='150px' maxWidth='150px' src={dbImage} alt="img"/>
                     </HStack>
                 </Container>
                 <Container>
-                    <Heading as='h4' fontSize='2xl' textAlign='left'>About</Heading>
-                    <Text textAlign='justify' style={{textIndent: 20}}>{'\tDavid is an aspiring software developer passionate about creating products that help people! He has recently graduated with a bachelors degree in Information Systems from the University of Maryland, Baltimore County'}</Text>
+                    <Heading as='h4' fontSize='2xl' textAlign='left' paddingBottom='10px'>About</Heading>
+                    <Text textAlign='justify' style={{textIndent: 20}}>{'\tDavid is an aspiring software developer passionate about creating products that help people! He has recently graduated with a bachelors degree in Information Systems from the University of Maryland, Baltimore County. Currently, he is focused on gaining experience developing full stack applications.'}</Text>
                 </Container>
                 <Container>
-                    <Heading as='h4' fontSize='2xl' textAlign='left'>Bio</Heading>
-                    <Text textAlign='justify' style={{textIndent: 20}}>{''}</Text>
+                    <Heading as='h4' fontSize='2xl' textAlign='left' paddingBottom='10px'>Interests</Heading>
+                    <UnorderedList>
+                        <ListItem>Web Development</ListItem>
+                        <ListItem>Artificial Intelligence</ListItem>
+                        <ListItem>Mobile Development</ListItem>
+                    </UnorderedList>
                 </Container>
                 <Container>
                     <Heading as='h4' fontSize='2xl' textAlign='left'>Contact</Heading>
@@ -39,6 +43,9 @@ export default function Home() {
                                 <ListIcon as={IconInbox}/>dbriken.tech@gmail.com
                             </ListItem>
                         </List>
+                </Container>
+                <Container>
+                    <Button as={ChakraLink} href="../document/resITDB.pdf" download="dbresume">Resume</Button>
                 </Container>
             </VStack>
         </Container>
