@@ -1,17 +1,20 @@
-import {Container, Heading, Text, SimpleGrid, Button, Image, Center, HStack, VStack, List, ListItem, ListIcon, Link as ChakraLink, UnorderedList} from "@chakra-ui/react"
+import {Container, Heading, Text, SimpleGrid, Button, Image, Center, HStack, VStack, List, ListItem, ListIcon, Link as ChakraLink, UnorderedList, useColorModeValue} from "@chakra-ui/react"
 import React from 'react'
 import { IconBrandLinkedin, IconBrandTwitter, IconInbox} from "@tabler/icons-react";
-import dbImage from '../images/headshot.jpg'
+import dbImage from '../images/headshot.png';
+import resume from '../document/resITDB.pdf';
 import { Link } from "react-router-dom";
 export default function Home() {
+    const bg = useColorModeValue('brand.50', 'whiteAlpha.50')
+    const h = useColorModeValue('brand.100', 'whiteAlpha.50')
     return(
         
-        <Container width='-moz-max-content' centerContent>
+        <Container width='-moz-max-content' centerContent bg={bg} borderTopRadius='3xl'>
            <VStack spacing='30px'>
                 <Container  width='-moz-max-content' paddingTop='50px'>
                     <HStack spacing='50px' alignItems='center'>
                         <Heading textAlign='center' fontSize='4xl'>David Briken</Heading>
-                        <Image borderRadius='full' maxHeight='150px' maxWidth='150px' src={dbImage} alt="img"/>
+                        <Image borderRadius='full' maxHeight='150px' maxWidth='150px'  bg ={h} src={dbImage} alt="img"/>
                     </HStack>
                 </Container>
                 <Container>
@@ -45,7 +48,7 @@ export default function Home() {
                         </List>
                 </Container>
                 <Container>
-                    <Button as={ChakraLink} href="../document/resITDB.pdf" download="dbresume">Resume</Button>
+                    <Button as={ChakraLink} href= {resume} download="dbresume">Resume</Button>
                 </Container>
             </VStack>
         </Container>
