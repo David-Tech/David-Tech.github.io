@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.5f4e22e5.css",
-    "main.js": "/static/js/main.54e0bb64.js",
+    "main.js": "/static/js/main.9865965b.js",
     "static/js/787.b864ae92.chunk.js": "/static/js/787.b864ae92.chunk.js",
     "static/media/headshot.png": "/static/media/headshot.d6343486ef3a804099c4.png",
     "static/media/resITDB.pdf": "/static/media/resITDB.31a415c4bc6fecd2b3be.pdf",
+    "static/media/jsCalculator.png": "/static/media/jsCalculator.b27fc7abacd7b4deee96.png",
     "static/media/open-sans-latin-400-normal.woff2": "/static/media/open-sans-latin-400-normal.2e11868c8988e285301c.woff2",
     "static/media/open-sans-latin-700-normal.woff2": "/static/media/open-sans-latin-700-normal.50c16efb37ef13080c94.woff2",
     "static/media/open-sans-cyrillic-ext-400-normal.woff2": "/static/media/open-sans-cyrillic-ext-400-normal.bc843a7cafaf78645470.woff2",
@@ -39,11 +40,11 @@
     "static/media/open-sans-greek-ext-700-normal.woff": "/static/media/open-sans-greek-ext-700-normal.346473745ba147539eae.woff",
     "index.html": "/index.html",
     "main.5f4e22e5.css.map": "/static/css/main.5f4e22e5.css.map",
-    "main.54e0bb64.js.map": "/static/js/main.54e0bb64.js.map",
+    "main.9865965b.js.map": "/static/js/main.9865965b.js.map",
     "787.b864ae92.chunk.js.map": "/static/js/787.b864ae92.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5f4e22e5.css",
-    "static/js/main.54e0bb64.js"
+    "static/js/main.9865965b.js"
   ]
 }
